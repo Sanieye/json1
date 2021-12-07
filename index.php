@@ -25,8 +25,7 @@
 </div>
 
 <div id="detail">
-        <tbody id="tblPosts">
-        </tbody>
+        
     
 </div>
 
@@ -53,7 +52,7 @@
         $("#main").show();
         $("#details").hide();
         
-        var url = "https://jsonplaceholder.typicode.com/posts";
+        var url = "https://jsonplaceholder.typicode.com/posts/1";
         $.getJSON(url)
             .done((data)=>{
                 $.each(data, (k, item)=>{
