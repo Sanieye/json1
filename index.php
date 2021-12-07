@@ -54,7 +54,7 @@
                         line += "<td>"+ data.id + "</td>";
                         line += "<td><b>"+ data.title + "</b><br/>";
                         line += data.body + "</td>";
-                        line += "<td> <button onClick='showDetails("+ data.uderid +");' > link </button> </td>";
+                        line += "<td>"+ data.uderId +"</td>";
 
                         line += "</tr>";
                     $("#tblDetails").append(line);
@@ -95,7 +95,7 @@
         $("#btnBack").click(()=>{
             $("#main").show();
             $("#detail").hide();
-           
+            
        
         });
     
