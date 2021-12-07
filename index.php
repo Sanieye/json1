@@ -94,7 +94,7 @@
         $("#btnBack").click(()=>{
             $("#main").show();
             $("#detail").hide();
-            $("#rowdetail").clear();
+            $("#rowremove").clear();
            
        
         });
