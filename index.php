@@ -54,9 +54,9 @@
                         line += "<td>"+ data.id + "</td>";
                         line += "<td><b>"+ data.title + "</b><br/>";
                         line += data.body + "</td>";
-                        line += "<td> "+ data.uderid +");' > link </button> </td>";
+                        line += "<td> <button onClick='showDetails("+ data.uderid +");' > link </button> </td>";
                         line += "</tr>";
-                   
+                    $("#tblPosts").append(line);
 
             })
             .fail((xhr, status, error)=>{
@@ -94,7 +94,7 @@
         $("#btnBack").click(()=>{
             $("#main").show();
             $("#detail").hide();
-            $("#rdetail").remove();
+            $("#rowdetail").remove();
        
         });
     
