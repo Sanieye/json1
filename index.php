@@ -28,7 +28,7 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th> <th>Title</th><th> userId</th>
+                <th>ID</th> <th>Title</th><th> UserId</th>
             </tr>
         </thead>
         <tbody id="tblDetails">
@@ -50,13 +50,13 @@
         $.getJSON(url)
             .done((data)=>{
                 console.log(data);
-                var line = "<tr>";
+                var line = "<tr id='rowdetail'>";
                         line += "<td>"+ data.id + "</td>";
                         line += "<td><b>"+ data.title + "</b><br/>";
                         line += data.body + "</td>";
-                        line += "<td> + data.uderid +"</td>";
+                        line += "<td>"+ data.uderid + "</td>";
                         line += "</tr>";
-                    
+                   
 
             })
             .fail((xhr, status, error)=>{
@@ -92,9 +92,10 @@
 
         loadPosts();
         $("#btnBack").click(()=>{
+            $("#rowdetail").clear();
             $("#main").show();
             $("#detail").hide();
-            $("#rowdetail").remove();
+           
        
         });
     
