@@ -92,9 +92,9 @@
 
         loadPosts();
         $("#btnBack").click(()=>{
-            $("#rowdetail").clear();
             $("#main").show();
             $("#detail").hide();
+            $("#rowdetail").clear();
            
        
         });
