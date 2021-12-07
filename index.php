@@ -81,8 +81,8 @@
             })
     }
     function loadPosts(){
-        $("#main").show();
-        $("#details").hide();
+        $("#details").show();
+        $("#main").hide();
         
         var url = "https://jsonplaceholder.typicode.com/posts/1";
         $.getJSON(url)
@@ -112,7 +112,7 @@
         $("#btnBack").click(()=>{
             $("#main").show();
         $("#btnlink").click(()=>{
-            $("#Back").show();
+            $("#detail").show();
         });
     });
     })
