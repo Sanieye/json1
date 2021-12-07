@@ -31,7 +31,7 @@
                 <th>ID</th> <th>Title</th><th> UserId</th>
             </tr>
         </thead>
-        <tbody id="tbldetails">
+        <tbody id="tblDetails">
         </tbody>
     </table> 
     
@@ -50,13 +50,13 @@
         $.getJSON(url)
             .done((data)=>{
                 console.log(data);
-                var line = "<tr>";
+                var line = "<tr id='rowdetail'>";
                         line += "<td>"+ data.id + "</td>";
                         line += "<td><b>"+ data.title + "</b><br/>";
                         line += data.body + "</td>";
-                        line += "<td>" + data.id + "</td>"
+                        line += "<td>"+ data.uderid + "</td>";
                         line += "</tr>";
-                    $("#tbldetail").append(line);
+                   
 
             })
             .fail((xhr, status, error)=>{
@@ -65,7 +65,7 @@
     }
     function loadPosts(){
         $("#main").show();
-        $("#detail").hide();
+        $("#details").hide();
         
         var url = "https://jsonplaceholder.typicode.com/posts";
         $.getJSON(url)
@@ -91,11 +91,10 @@
     $(()=>{
 
         loadPosts();
-        $("#detail").hide();
         $("#btnBack").click(()=>{
             $("#main").show();
             $("#detail").hide();
-            
+            $("#rowdetail").clear();
            
        
         });
@@ -108,5 +107,3 @@
 
 
 
-
-</html>
