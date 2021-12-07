@@ -43,7 +43,7 @@
 </body>
 
 <script>
-    function showDetails(id){
+    function showDetail(id){
         $("#main").hide();
         $("#detail").show();
         var url = "https://jsonplaceholder.typicode.com/posts/"+id;
