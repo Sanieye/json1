@@ -25,15 +25,9 @@
 </div>
 
 <div id="detail">
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th> <th>Title</th><th> Details </th>
-            </tr>
-        </thead>
         <tbody id="tblPosts">
         </tbody>
-    </table>
+    
 </div>
 
     
@@ -45,7 +39,7 @@
     function showDetails(id){
         $("#main").hide();
         $("#detail").show();
-        var url = "https://jsonplaceholder.typicode.com/posts/1"+id;
+        var url = "https://jsonplaceholder.typicode.com/posts/"+id;
         $.getJSON(url)
             .done((data)=>{
                 console.log(data);
