@@ -31,7 +31,7 @@
                 <th>ID</th> <th>Title</th><th> userId</th>
             </tr>
         </thead>
-        <tbody id="tblPosts">
+        <tbody id="tblDetails">
         </tbody>
     </table> 
     
@@ -50,6 +50,14 @@
         $.getJSON(url)
             .done((data)=>{
                 console.log(data);
+                var line = "<tr>";
+                        line += "<td>"+ data.id + "</td>";
+                        line += "<td><b>"+ data.title + "</b><br/>";
+                        line += data.body + "</td>";
+                        line += "<td> <button onClick='showDetails("+ data.uderid +");' > link </button> </td>";
+
+                        line += "</tr>";
+                    $("#tblDetails").append(line);
 
             })
             .fail((xhr, status, error)=>{
