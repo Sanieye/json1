@@ -89,6 +89,7 @@
         $("#btnlink").click(()=>{
             $("#Back").show();
         });
+        });
     })
 
 </script>
