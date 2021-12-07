@@ -25,7 +25,15 @@
 </div>
 
 <div id="detail">
-        
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th> <th>Title</th><th> Details </th>
+            </tr>
+        </thead>
+        <tbody id="tblPosts">
+        </tbody>
+    </table> 
     
 </div>
 
@@ -52,7 +60,7 @@
         $("#main").show();
         $("#details").hide();
         
-        var url = "https://jsonplaceholder.typicode.com/posts/";
+        var url = "https://jsonplaceholder.typicode.com/posts";
         $.getJSON(url)
             .done((data)=>{
                 $.each(data, (k, item)=>{
@@ -78,6 +86,8 @@
         loadPosts();
         $("#btnBack").click(()=>{
             $("#main").show();
+        $("#btnlink").click(()=>{
+            $("#Back").show();
         });
     })
 
