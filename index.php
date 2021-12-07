@@ -45,7 +45,7 @@
     function showDetails(id){
         $("#main").hide();
         $("#detail").show();
-        var url = "https://jsonplaceholder.typicode.com/posts/"+id;
+        var url = "https://jsonplaceholder.typicode.com/posts/1"+id;
         $.getJSON(url)
             .done((data)=>{
                 console.log(data);
