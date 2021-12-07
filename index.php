@@ -80,41 +80,15 @@
 
             })
     }
-    function loadPosts(){
-        $("#details").show();
-        $("#main").hide();
-        
-        var url = "https://jsonplaceholder.typicode.com/posts/1";
-        $.getJSON(url)
-            .done((data)=>{
-                $.each(data, (k, item)=>{
-                    console.log(item);
-                    var line = "<tr>";
-                        line += "<td>"+ item.id + "</td>";
-                        line += "<td><b>"+ item.title + "</b><br/>";
-                        line += item.body + "</td>";
-                        line += "<td> <button onClick='showDetails("+ item.id +");' > Back </button> </td>";
-
-                        line += "</tr>";
-                    $("#tblPosts").append(line);
-                });
-                $("#Back").show();
-            })
-            .fail((xhr, status, error)=>{
-
-            })
-    }
-
-
+  
     $(()=>{
 
         loadPosts();
         $("#btnBack").click(()=>{
             $("#main").show();
-        $("#btnlink").click(()=>{
-            $("#detail").show();
+       
         });
-    });
+    
     })
 
 </script>
