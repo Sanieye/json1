@@ -95,7 +95,7 @@
         $("#btnBack").click(()=>{
             $("#main").show();
             $("#detail").hide();
-            $("#rdetail").remove();
+           
        
         });
     
