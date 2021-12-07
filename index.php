@@ -31,7 +31,7 @@
                 <th>ID</th> <th>Title</th><th> UserId</th>
             </tr>
         </thead>
-        <tbody id="tblDetails">
+        <tbody id="tblDetail">
         </tbody>
     </table> 
     
