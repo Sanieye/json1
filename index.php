@@ -56,7 +56,7 @@
                         line += data.body + "</td>";
                         line += "<td>"+ data.userid + "</td>";
                         line += "</tr>";
-                   
+                        $("#tbldetail").append(line);
 
             })
             .fail((xhr, status, error)=>{
