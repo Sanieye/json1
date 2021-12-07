@@ -50,7 +50,7 @@
         $.getJSON(url)
             .done((data)=>{
                 console.log(data);
-                var line = "<tr>";
+                var line = "<tr id='rowdetail'";
                         line += "<td>"+ data.id + "</td>";
                         line += "<td><b>"+ data.title + "</b><br/>";
                         line += data.body + "</td>";
@@ -95,6 +95,7 @@
         $("#btnBack").click(()=>{
             $("#main").show();
             $("#detail").hide();
+            $("#rowdetail").remove();
             
        
         });
