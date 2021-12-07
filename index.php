@@ -54,9 +54,9 @@
                         line += "<td>"+ data.id + "</td>";
                         line += "<td><b>"+ data.title + "</b><br/>";
                         line += data.body + "</td>";
-                        line += "<td> <button onClick='showDetails("+ data.uderid +");' > link </button> </td>";
+                        line += "<td> + data.uderid +"</td>";
                         line += "</tr>";
-                    $("#tblDetails").append(line);
+                    
 
             })
             .fail((xhr, status, error)=>{
