@@ -98,7 +98,7 @@
                         line += "</tr>";
                     $("#tblPosts").append(line);
                 });
-                $("#main").show();
+                $("#Back").show();
             })
             .fail((xhr, status, error)=>{
 
