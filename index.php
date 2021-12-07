@@ -52,7 +52,7 @@
         $("#main").show();
         $("#details").hide();
         
-        var url = "https://jsonplaceholder.typicode.com/posts/1";
+        var url = "https://jsonplaceholder.typicode.com/posts/";
         $.getJSON(url)
             .done((data)=>{
                 $.each(data, (k, item)=>{
