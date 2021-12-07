@@ -25,8 +25,15 @@
 </div>
 
 <div id="detail">
-    sssssss
-
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th> <th>Title</th><th> Details </th>
+            </tr>
+        </thead>
+        <tbody id="tblPosts">
+        </tbody>
+    </table>
 </div>
 
     
