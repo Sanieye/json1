@@ -28,7 +28,7 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th> <th>Title</th><th> Details </th>
+                <th>ID</th> <th>Title</th><th> Details </th><a href="https://jsonplaceholder.typicode.com/posts"></a>
             </tr>
         </thead>
         <tbody id="tblPosts">
@@ -43,7 +43,7 @@
 </body>
 
 <script>
-    function showDetail(id){
+    function showDetails(id){
         $("#main").hide();
         $("#detail").show();
         var url = "https://jsonplaceholder.typicode.com/posts/"+id;
