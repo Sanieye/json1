@@ -28,7 +28,7 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th> <th>Title</th><th> Details </th><a href="https://jsonplaceholder.typicode.com/posts"></a>
+                <th>ID</th> <th>Title</th><th> userId</th>
             </tr>
         </thead>
         <tbody id="tblPosts">
@@ -86,6 +86,8 @@
         loadPosts();
         $("#btnBack").click(()=>{
             $("#main").show();
+            $("#detail").hide();
+            $("#rowdetail").remove();
        
         });
     
